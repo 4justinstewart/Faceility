@@ -11,3 +11,39 @@
  *= require_self
  *= require_tree .
  */
+
+ #login {
+  width: 25%;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  text-align: center;
+  background-color: #d9eaf4;
+ }
+
+ #login h1 {
+  text-align: center;
+ }
+
+ #login a {
+  padding: 20px, 35px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+ }
+
+ #login a:hover {
+  color: black;
+ }
+
+ #login button {
+  background: #449ac8;
+  margin-bottom: 30px;
+  border-radius: 5px;
+ }
+
+ body {
+  background-image: url('connect.png');
+ }
