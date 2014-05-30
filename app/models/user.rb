@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :connections
+
   def self.create_person_with_omniauth(auth)
     User.create( provider: auth['provider'],
                  uid: auth['uid'],
