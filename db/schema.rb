@@ -15,8 +15,12 @@ ActiveRecord::Schema.define(version: 20140529203627) do
 
   create_table "connections", force: true do |t|
     t.string   "location"
+    t.string   "industry"
     t.string   "name"
     t.string   "img_url"
+    t.string   "blurb"
+    t.string   "connection_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
