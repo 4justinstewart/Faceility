@@ -49,4 +49,31 @@
   font-family: 'Raleway', sans-serif;
  }
 
+.container {
+  max-width: 70%;
+  border: 1px solid black;
+  margin: 25px auto;
+}
 
+.container h1{
+  text-align: center;
+}
+
+.container div {
+  padding: 60px 70px;
+  margin:10px;
+  border: 3px solid black;
+  display: inline-block;
+  border-radius: 250px;
+  margin: 0 9% 50px 9%;
+  background-color: #449ac8;
+  cursor: pointer;
+}
+
+#industry {
+  display: none;
+}
+
+#location {
+  display: none;
+}
