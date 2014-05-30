@@ -1,6 +1,11 @@
 Faceility::Application.routes.draw do
+  get "user/index"
+  get "sessions/index"
+  get "sessions/create"
+  get "sessions/destroy"
   root 'static_pages#index'
-  # The priority is based upon order of creation: first created -> highest priority.
+  match '/auth/linkedin/callback', to: 'sessions#create', via: 'get'
+    # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

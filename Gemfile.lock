@@ -36,6 +36,7 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.1.0)
+    hashie (2.1.1)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -45,12 +46,25 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    linkedin (0.4.7)
+      hashie (~> 2.0)
+      multi_json (~> 1.0)
+      oauth (~> 0.4)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
+    oauth (0.4.7)
+    omniauth (1.2.1)
+      hashie (>= 1.2, < 3)
+      rack (~> 1.0)
+    omniauth-linkedin (0.1.0)
+      omniauth-oauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -110,6 +124,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  linkedin
+  omniauth
+  omniauth-linkedin
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
