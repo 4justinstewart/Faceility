@@ -4,17 +4,27 @@
   <div class="flaticon-factory6"></div>
   <div class="flaticon-map32"></div>
 
-  <ul id="location">
-    <% @unique_locations.each do |locale| %>
-      <li><a href="#"><%= locale %></a></li>
-    <% end %>
-  </ul>
 
-  <ul id="industry">
-    <% @unique_industries.each do |industry| %>
-      <li><a href="#"><%= industry %></a></li>
-    <% end %>
-  </ul>
+
+
+  <section id='loc_ind'>
+
+    <ul id="location" >
+      <h2>Locacion</h2>
+      <% @unique_locations.each do |locale| %>
+        <li><a class="options" data-type="location" href="#"><%= locale %></a></li>
+      <% end %>
+    </ul>
+
+    <ul id="industry">
+      <h2>Industria</h2>
+      <% @unique_industries.each do |industry| %>
+        <li><a class="options" data-type="industry" href="#"><%= industry %></a></li>
+      <% end %>
+    </ul>
+  </section>
+  <section id='img_holder'>
+  </section>
 </div>
 
 

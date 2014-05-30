@@ -14,7 +14,7 @@ class UserController < ApplicationController
     # p "hah" * 20
     # p [name, location, industry, img_url, connect.id]
     # p "raa" * 20
-      @user.connections.create(
+      @user.connections.find_or_create_by(
         location: location,
         industry: industry,
         name: name,
@@ -36,6 +36,19 @@ class UserController < ApplicationController
     @unique_locations = all_locations.uniq.compact  # RESOLVES UNIQUENESS and NIL values
     @unique_industries = all_industries.uniq.compact
 
+
+
+  end
+
+  def find_pics
+    data = params[:data]
+    dataSet = params[:dataSet]
+
+    @user = User.find(session[:user_id])
+    @connections = @user.connections.where(dataSet.to_sym => data)
+    p @connections[0..2]
+
+    render :json => @connections.to_json
 
   end
 end

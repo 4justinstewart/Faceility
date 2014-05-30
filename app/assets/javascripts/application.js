@@ -16,5 +16,11 @@
 //= require_tree .
 
 $(function() {
+  $('.flaticon-factory6').on('click', function() {
+    $('#industry').toggle();
+  });
 
+  $('.flaticon-map32').on('click', function() {
+    $('#location').toggle();
+  });
 });

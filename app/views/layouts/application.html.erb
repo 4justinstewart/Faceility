@@ -9,6 +9,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if @user %>
+    <a id= 'logout' href='/logout'>Logout</a>
+  <% end%>
 
 <%= yield %>
 
